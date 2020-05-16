@@ -1,0 +1,32 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+
+        {
+            "name": "update_details.py",
+            "type": "python",
+            "request": "launch",
+            "program": "update_details.py",
+            "args": ["111769"],
+            "env": {},
+            "console": "integratedTerminal",
+        },
+
+        {
+            "name": "main.py",
+            "type": "python",
+            "request": "launch",
+            "program": "main.py",
+            "args": ["ho"],
+            "env": {
+                "MM_DISPLAY_DETAILS": "0",
+                "MM_DISPLAY_THUMBNAILS": "1"
+            },
+            "console": "integratedTerminal",
+        }
+    ]
+}
