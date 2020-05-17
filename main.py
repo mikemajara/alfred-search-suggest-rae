@@ -12,8 +12,8 @@ import cache
 from workflow import Workflow3, web
 from workflow.background import run_in_background, is_running
 
-DISPLAY_DETAILS = True #os.getenv('MM_DISPLAY_DETAILS').isdigit() and int(os.getenv('MM_DISPLAY_DETAILS'))
-# DISPLAY_THUMBNAILS = os.getenv('MM_DISPLAY_THUMBNAILS').isdigit() and int(os.getenv('MM_DISPLAY_THUMBNAILS'))
+DISPLAY_DETAILS = True
+EXTENDED_DEFINITION = False
 
 REFRESH_RATE = 1.2
 
@@ -31,17 +31,24 @@ def get_url_for_word(word):
 
 
 def get_details_preview(details):
-    log.debug("extracting from details...")
-    log.debug(details)
     first_article = next(iter(details), None)
-    log.debug(first_article)
     if first_article is None:
         return "No details found"
-    if len(first_article.get('meanings')) <= 0: 
-        log.debug(json.dumps(details))
     meanings_list = first_article.get('meanings', [])
     return first_article.get('etymology', '') + " " +\
         next(iter(first_article.get('meanings', [])), '')
+
+def get_details_full(details):
+    details_str = ""
+    for article in details:
+        if article is None:
+            continue
+        details_str += article.get('title', '') + '\n-\n'
+        details_str += article.get('etymology', '') + '\n\n'
+        for meaning in article.get('meanings', []):
+            details_str += meaning + '\n'
+        details_str += '\n\n\n'
+    return details_str
 
 
 def is_details_empty(details):
@@ -76,7 +83,7 @@ def main(wf):
         return
     
     #word is selected when space is at end
-    if re.search(r"\s$", input_word) is not None:
+    if re.search(r"\s$", input_word) is not None and EXTENDED_DEFINITION:
         selectedWord = input_word.strip()
         searchString = None
     else:
@@ -93,7 +100,8 @@ def main(wf):
         for word in res:
             
             # defaults 
-            details_str = ""
+            details_preview_str = ""
+            details_full_str = ""
 
             if DISPLAY_DETAILS:
                 details = wf.cached_data('details_' + word, max_age=0)
@@ -107,23 +115,25 @@ def main(wf):
                             word
                         ]
                     )
-                    details_str = "Loading details... "
+                    details_preview_str = "Loading details... "
                     wf.rerun = REFRESH_RATE
                 else:
-                    details_str = get_details_preview(details)
-
+                    details_preview_str = get_details_preview(details)
+                    details_full_str = get_details_full(details)
+                    
             can_automcomplete = details is not None and not is_details_empty(details)
-
+            
             wf.add_item(
                 icon=None,
-                valid=False,
                 title=word,
                 quicklookurl=get_url_for_word(word) if can_automcomplete else None,
                 autocomplete=word + " " if can_automcomplete else None,
-                subtitle=details_str
+                subtitle=details_preview_str,
+                copytext=details_full_str,
+                largetext=details_full_str
             )
 
-    elif selectedWord is not None:
+    elif selectedWord is not None and EXTENDED_DEFINITION:
         details = wf.cached_data("details_" + selectedWord, max_age=0)
         if details is None:
             run_in_background(
@@ -146,8 +156,9 @@ def main(wf):
 
     # Default option to search if no result found
     wf.add_item(
+        icon="icon-search.png",
         title="Search on web",
-        subtitle="Search RAE for " + input_word,
+        subtitle="Open search RAE for " + input_word,
         arg=get_url_for_word(searchString or selectedWord),
         valid=True,
     )
