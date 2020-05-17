@@ -2264,7 +2264,7 @@ load	../workflow/workflow.py	/^    def load(cls, file_obj):$/;"	kind:member	line
 locate_unbalanced_end	../lib/lxml/html/diff.py	/^def locate_unbalanced_end(unbalanced_end, pre_delete, post_delete):$/;"	kind:function	line:415
 locate_unbalanced_start	../lib/lxml/html/diff.py	/^def locate_unbalanced_start(unbalanced_start, pre_delete, post_delete):$/;"	kind:function	line:365
 locked	../workflow/util.py	/^    def locked(self):$/;"	kind:member	line:415
-log	../main.py	/^    log = wf.logger$/;"	kind:variable	line:166
+log	../main.py	/^    log = wf.logger$/;"	kind:variable	line:167
 log	../rae_spider.py	/^log = logging.getLogger("rae_spider")$/;"	kind:variable	line:7
 log	../update_details.py	/^    log = wf.logger$/;"	kind:variable	line:45
 log	../workflow/notify.py	/^def log():$/;"	kind:function	line:75
@@ -2812,7 +2812,7 @@ web	../update_details.py	/^from workflow import Workflow3, web$/;"	kind:namespac
 web	../workflow/update.py	/^import web$/;"	kind:namespace	line:35
 web.py	../workflow/web.py	1;"	kind:file	line:1
 webbrowser	../lib/lxml/html/__init__.py	/^    import webbrowser$/;"	kind:namespace	line:1865
-wf	../main.py	/^    wf = Workflow3(libraries=[os.path.abspath(os.path.join(os.path.dirname(__file__), 'lib'))])$/;"	kind:variable	line:164
+wf	../main.py	/^    wf = Workflow3(libraries=[os.path.abspath(os.path.join(os.path.dirname(__file__), 'lib'))])$/;"	kind:variable	line:165
 wf	../update_details.py	/^    wf = Workflow3(libraries=[os.path.abspath(os.path.join(os.path.dirname(__file__), 'lib'))])$/;"	kind:variable	line:43
 wf	../workflow/background.py	/^def wf():$/;"	kind:function	line:35
 wf	../workflow/notify.py	/^def wf():$/;"	kind:function	line:63

@@ -118,6 +118,7 @@ def main(wf):
                 icon=None,
                 valid=False,
                 title=word,
+                quicklookurl=get_url_for_word(word) if can_automcomplete else None,
                 autocomplete=word + " " if can_automcomplete else None,
                 subtitle=details_str
             )
