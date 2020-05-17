@@ -31,7 +31,10 @@ def get_url_for_word(word):
 
 
 def get_details_preview(details):
+    log.debug("extracting from details...")
+    log.debug(details)
     first_article = next(iter(details), None)
+    log.debug(first_article)
     if first_article is None:
         return "No details found"
     if len(first_article.get('meanings')) <= 0: 
@@ -41,15 +44,47 @@ def get_details_preview(details):
         next(iter(first_article.get('meanings', [])), '')
 
 
+def is_details_empty(details):
+    detail_preview = get_details_preview(details)
+    return len(detail_preview) < 5 #check if string is long enough
+
+
+def is_valid_args(args_str):
+    return len(args_str.split()) <= 1 and \
+        len(args_str) > 0
+
+
+def get_menaing_strings_from_details(details):
+    etymology = details.get('etymology', '')
+    meanings = details.get('meanings', [])
+    return [x for x in [etymology] + meanings if len(x) > 0]
+
+
 def main(wf):
 
     if DISPLAY_DETAILS:
         from pyquery import PyQuery as pq
 
-    args = wf.args
-    searchString = ' '.join(args)
+    input_word = ' '.join(wf.args)
+    if not is_valid_args(input_word):
+        wf.add_item(
+            title="Invalid arguments.",
+            subtitle="Type just one word. Insert space or select one to see definitions.",
+            valid=False,
+        )
+        wf.send_feedback()
+        return
     
-    if (len(args) > 0):
+    #word is selected when space is at end
+    if re.search(r"\s$", input_word) is not None:
+        selectedWord = input_word.strip()
+        searchString = None
+    else:
+        selectedWord = None
+        searchString = input_word.strip()
+    
+
+    if searchString is not None:
         res = wf.cached_data(searchString, max_age=0)
         if res is None:
             res = get_rae_suggestions(searchString).json()
@@ -77,22 +112,42 @@ def main(wf):
                 else:
                     details_str = get_details_preview(details)
 
+            can_automcomplete = details is not None and not is_details_empty(details)
+
             wf.add_item(
                 icon=None,
-                valid=True,
+                valid=False,
                 title=word,
-                arg=word,
-                autocomplete=word,
+                autocomplete=word + " " if can_automcomplete else None,
                 subtitle=details_str
-            ).add_modifier(
-                'alt', 'Check definition'
             )
+
+    elif selectedWord is not None:
+        details = wf.cached_data("details_" + selectedWord, max_age=0)
+        if details is None:
+            run_in_background(
+                'update_details_' + selectedWord,
+                [
+                    '/usr/bin/python',
+                    wf.workflowfile('update_details.py'),
+                    word
+                ]
+            )
+            details = []
+            wf.rerun = REFRESH_RATE
+
+        for detail in details:
+            for item in get_menaing_strings_from_details(detail):
+                wf.add_item(
+                    icon=None,
+                    title=item,
+                )
 
     # Default option to search if no result found
     wf.add_item(
         title="Search on web",
-        subtitle="Search RAE for " + " ".join(args),
-        arg=get_url_for_word(searchString),
+        subtitle="Search RAE for " + input_word,
+        arg=get_url_for_word(searchString or selectedWord),
         valid=True,
     )
 

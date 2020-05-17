@@ -22,31 +22,7 @@
 			</dict>
 		</array>
 		<key>83F28A94-40CE-4B0C-BE01-3EE066D31398</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>C88B7C29-CF37-41A3-A305-640AF3B46625</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>C88B7C29-CF37-41A3-A305-640AF3B46625</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>4AA2BD5D-F4EA-41D7-9684-5CE0B528D5ED</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
+		<array/>
 		<key>EDD1258F-38AB-452D-AC67-4679BCDD7935</key>
 		<array>
 			<dict>
@@ -151,53 +127,6 @@
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>1</integer>
-				<key>queuemode</key>
-				<integer>2</integer>
-				<key>runningsubtext</key>
-				<string>Searching among all the words we know...</string>
-				<key>script</key>
-				<string>python main-word.py "{query}"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Type to search. ⇧ Shift to preview. ⌘ + C to copy link</string>
-				<key>title</key>
-				<string>Navigate definitions of {query}</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>4AA2BD5D-F4EA-41D7-9684-5CE0B528D5ED</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>102</integer>
 				<key>keyword</key>
 				<string>rae</string>
 				<key>queuedelaycustom</key>
@@ -232,36 +161,11 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>{query}</string>
-				<key>variables</key>
-				<dict>
-					<key>word</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>C88B7C29-CF37-41A3-A305-640AF3B46625</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>4AA2BD5D-F4EA-41D7-9684-5CE0B528D5ED</key>
-		<dict>
-			<key>xpos</key>
-			<integer>555</integer>
-			<key>ypos</key>
-			<integer>175</integer>
-		</dict>
 		<key>73B590C2-74F3-4404-A768-A6C0A545A35D</key>
 		<dict>
 			<key>xpos</key>
@@ -282,13 +186,6 @@
 			<integer>555</integer>
 			<key>ypos</key>
 			<integer>40</integer>
-		</dict>
-		<key>C88B7C29-CF37-41A3-A305-640AF3B46625</key>
-		<dict>
-			<key>xpos</key>
-			<integer>415</integer>
-			<key>ypos</key>
-			<integer>205</integer>
 		</dict>
 		<key>EDD1258F-38AB-452D-AC67-4679BCDD7935</key>
 		<dict>

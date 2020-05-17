@@ -61,7 +61,6 @@ DEL_START	../lib/lxml/html/diff.py	/^class DEL_START:$/;"	kind:class	line:257
 DFN	../lib/lxml/html/builder.py	/^DFN = E.dfn # instance definition$/;"	kind:variable	line:61
 DIR	../lib/lxml/html/builder.py	/^DIR = E.dir # directory list (DEPRECATED)$/;"	kind:variable	line:62
 DIR_CACHE_IMAGE	../cache.py	/^DIR_CACHE_IMAGE = '.\/cache'$/;"	kind:variable	line:5
-DISPLAY_DETAILS	../main-word.py	/^DISPLAY_DETAILS = True #os.getenv('MM_DISPLAY_DETAILS').isdigit() and int(os.getenv('MM_DISPLAY_DETAILS'))$/;"	kind:variable	line:15
 DISPLAY_DETAILS	../main.py	/^DISPLAY_DETAILS = True #os.getenv('MM_DISPLAY_DETAILS').isdigit() and int(os.getenv('MM_DISPLAY_DETAILS'))$/;"	kind:variable	line:15
 DIV	../lib/lxml/html/builder.py	/^DIV = E.div # generic language\/style container$/;"	kind:variable	line:63
 DL	../lib/lxml/html/builder.py	/^DL = E.dl # definition list$/;"	kind:variable	line:64
@@ -259,7 +258,6 @@ PyQuery	../lib/pyquery/pyquery.py	/^class PyQuery(list):$/;"	kind:class	line:178
 Python	../lib/lxml/html/soupparser.py	/^    from html.entities import name2codepoint  # Python 3$/;"	kind:namespace	line:290
 PythonElementClassLookup	../lib/lxml/pyclasslookup.py	/^from lxml.etree import PythonElementClassLookup$/;"	kind:namespace	line:3
 Q	../lib/lxml/html/builder.py	/^Q = E.q # short inline quotation$/;"	kind:variable	line:104
-REFRESH_RATE	../main-word.py	/^REFRESH_RATE = 1.2$/;"	kind:variable	line:18
 REFRESH_RATE	../main.py	/^REFRESH_RATE = 1.2$/;"	kind:variable	line:18
 RELAXNG_NS	../lib/lxml/isoschematron/__init__.py	/^RELAXNG_NS = "http:\/\/relaxng.org\/ns\/structure\/1.0"$/;"	kind:variable	line:33
 RELEASES_BASE	../workflow/update.py	/^RELEASES_BASE = 'https:\/\/api.github.com\/repos\/{}\/releases'$/;"	kind:variable	line:40
@@ -317,7 +315,6 @@ TreeBuilder	../lib/lxml/html/html5parser.py	/^from html5lib.treebuilders.etree_l
 U	../lib/lxml/html/builder.py	/^U = E.u # underlined text style (DEPRECATED)$/;"	kind:variable	line:126
 UL	../lib/lxml/html/builder.py	/^UL = E.ul # unordered list$/;"	kind:variable	line:127
 UNSET	../workflow/workflow.py	/^UNSET = object()$/;"	kind:variable	line:56
-URL_SEARCH_GET	../main-word.py	/^URL_SEARCH_GET = "https:\/\/dle.rae.es\/"$/;"	kind:variable	line:21
 URL_SEARCH_GET	../main.py	/^URL_SEARCH_GET = "https:\/\/dle.rae.es\/"$/;"	kind:variable	line:21
 USER_AGENT	../workflow/web.py	/^USER_AGENT = u'Alfred-Workflow\/1.36 (+http:\/\/www.deanishe.net\/alfred-workflow)'$/;"	kind:variable	line:27
 VAR	../lib/lxml/html/builder.py	/^VAR = E.var # instance of a variable or program argument$/;"	kind:variable	line:128
@@ -335,7 +332,6 @@ Workflow	../workflow/background.py	/^from workflow import Workflow$/;"	kind:name
 Workflow	../workflow/workflow.py	/^class Workflow(object):$/;"	kind:class	line:889
 Workflow	../workflow/workflow3.py	/^from .workflow import ICON_WARNING, Workflow$/;"	kind:namespace	line:32
 Workflow3	../cache.py	/^from workflow import web, Workflow3$/;"	kind:namespace	line:2
-Workflow3	../main-word.py	/^from workflow import Workflow3, web$/;"	kind:namespace	line:12
 Workflow3	../main.py	/^from workflow import Workflow3, web$/;"	kind:namespace	line:12
 Workflow3	../update_details.py	/^from workflow import Workflow3, web$/;"	kind:namespace	line:7
 Workflow3	../workflow/__init__.py	/^from .workflow3 import Variables, Workflow3$/;"	kind:namespace	line:17
@@ -1795,7 +1791,6 @@ builder.py	../lib/lxml/html/builder.py	1;"	kind:file	line:1
 bundleid	../workflow/workflow.py	/^    def bundleid(self):$/;"	kind:member	line:1092
 c14n.pxd	../lib/lxml/includes/c14n.pxd	1;"	kind:file	line:1
 cPickle	../workflow/workflow.py	/^import cPickle$/;"	kind:namespace	line:25
-cache	../main-word.py	/^import cache$/;"	kind:namespace	line:11
 cache	../main.py	/^import cache$/;"	kind:namespace	line:11
 cache.py	../cache.py	1;"	kind:file	line:1
 cache_data	../workflow/workflow.py	/^    def cache_data(self, name, data):$/;"	kind:member	line:1706
@@ -2089,23 +2084,20 @@ get_content_type	../workflow/web.py	/^    def get_content_type(filename):$/;"	ki
 get_def_tree	../rae_spider.py	/^    def get_def_tree(self):$/;"	kind:member	line:60
 get_default_parser	../lib/lxml/doctestcompare.py	/^    def get_default_parser(self):$/;"	kind:member	line:370
 get_default_parser	../lib/lxml/doctestcompare.py	/^    def get_default_parser(self):$/;"	kind:member	line:87
-get_details_preview	../main-word.py	/^def get_details_preview(details):$/;"	kind:function	line:33
 get_details_preview	../main.py	/^def get_details_preview(details):$/;"	kind:function	line:33
 get_downloads	../workflow/update.py	/^def get_downloads(repo):$/;"	kind:function	line:390
 get_element_by_id	../lib/lxml/html/__init__.py	/^    def get_element_by_id(self, id, *default):$/;"	kind:member	line:394
 get_etymology	../rae_spider.py	/^    def get_etymology(cls, article):$/;"	kind:member	line:31
 get_include	../lib/lxml/__init__.py	/^def get_include():$/;"	kind:function	line:6
-get_items	../main-word.py	/^def get_items(details):$/;"	kind:function	line:44
 get_matching_blocks	../lib/lxml/html/diff.py	/^    def get_matching_blocks(self):$/;"	kind:member	line:873
 get_meanings	../rae_spider.py	/^    def get_meanings(cls, article):$/;"	kind:member	line:36
+get_menaing_strings_from_details	../main.py	/^def get_menaing_strings_from_details(details):$/;"	kind:function	line:57
 get_parser	../lib/lxml/doctestcompare.py	/^    def get_parser(self, want, got, optionflags):$/;"	kind:member	line:111
 get_password	../workflow/workflow.py	/^    def get_password(self, account, service=None):$/;"	kind:member	line:2426
-get_rae_suggestions	../main-word.py	/^def get_rae_suggestions(word):$/;"	kind:function	line:24
 get_rae_suggestions	../main.py	/^def get_rae_suggestions(word):$/;"	kind:function	line:24
 get_raw_html_for_url	../update_details.py	/^def get_raw_html_for_url(url):$/;"	kind:function	line:10
 get_results	../rae_spider.py	/^    def get_results(self):$/;"	kind:member	line:18
 get_title_article_title	../rae_spider.py	/^    def get_title_article_title(cls, article):$/;"	kind:member	line:28
-get_url_for_word	../main-word.py	/^def get_url_for_word(word):$/;"	kind:function	line:29
 get_url_for_word	../main.py	/^def get_url_for_word(word):$/;"	kind:function	line:29
 get_url_for_word	../update_details.py	/^def get_url_for_word(word):$/;"	kind:function	line:15
 get_word_detail_object	../update_details.py	/^def get_word_detail_object(word):$/;"	kind:function	line:19
@@ -2201,15 +2193,16 @@ intersection_update	../lib/lxml/html/_setmixin.py	/^    def intersection_update(
 is_	../lib/pyquery/pyquery.py	/^    def is_(self, selector):$/;"	kind:member	line:649
 is_cache_full	../cache.py	/^def is_cache_full(dir = DIR_CACHE_IMAGE):$/;"	kind:function	line:27
 is_delim	../lib/cssselect/parser.py	/^    def is_delim(self, *values):$/;"	kind:member	line:658
+is_details_empty	../main.py	/^def is_details_empty(details):$/;"	kind:function	line:47
 is_end_tag	../lib/lxml/html/diff.py	/^def is_end_tag(tok):$/;"	kind:function	line:745
 is_non_whitespace	../lib/cssselect/xpath.py	/^is_non_whitespace = re.compile(r'^[^ \\t\\r\\n\\f]+$').match$/;"	kind:variable	line:98
-is_running	../main-word.py	/^from workflow.background import run_in_background, is_running$/;"	kind:namespace	line:13
 is_running	../main.py	/^from workflow.background import run_in_background, is_running$/;"	kind:namespace	line:13
 is_running	../workflow/background.py	/^def is_running(name):$/;"	kind:function	line:111
 is_safe_name	../lib/cssselect/xpath.py	/^is_safe_name = re.compile('^[a-zA-Z_][a-zA-Z0-9_.-]*$').match$/;"	kind:variable	line:95
 is_start_tag	../lib/lxml/html/diff.py	/^def is_start_tag(tok):$/;"	kind:function	line:748
 is_string	../lib/pyquery/text.py	/^    def is_string(s):$/;"	kind:function	line:14
 is_string	../lib/pyquery/text.py	/^    def is_string(s):$/;"	kind:function	line:17
+is_valid_args	../main.py	/^def is_valid_args(args_str):$/;"	kind:function	line:52
 is_word	../lib/lxml/html/diff.py	/^def is_word(tok):$/;"	kind:function	line:742
 isascii	../workflow/workflow.py	/^def isascii(text):$/;"	kind:function	line:486
 iso_abstract_expand	../lib/lxml/isoschematron/__init__.py	/^iso_abstract_expand = _etree.XSLT(_etree.parse($/;"	kind:variable	line:52
@@ -2233,7 +2226,6 @@ itervalues	../workflow/web.py	/^    def itervalues(self):$/;"	kind:member	line:1
 javascript	../lib/lxml/html/clean.py	/^    javascript = True$/;"	kind:variable	line:195
 join	../lib/cssselect/xpath.py	/^    def join(self, combiner, other):$/;"	kind:member	line:79
 join	../lib/pyquery/cssselectpatch.py	/^    def join(self, combiner, other):$/;"	kind:member	line:34
-json	../main-word.py	/^import json$/;"	kind:namespace	line:7
 json	../main.py	/^import json$/;"	kind:namespace	line:7
 json	../rae_spider.py	/^import json$/;"	kind:namespace	line:2
 json	../update_details.py	/^import json$/;"	kind:namespace	line:5
@@ -2272,8 +2264,7 @@ load	../workflow/workflow.py	/^    def load(cls, file_obj):$/;"	kind:member	line
 locate_unbalanced_end	../lib/lxml/html/diff.py	/^def locate_unbalanced_end(unbalanced_end, pre_delete, post_delete):$/;"	kind:function	line:415
 locate_unbalanced_start	../lib/lxml/html/diff.py	/^def locate_unbalanced_start(unbalanced_start, pre_delete, post_delete):$/;"	kind:function	line:365
 locked	../workflow/util.py	/^    def locked(self):$/;"	kind:member	line:415
-log	../main-word.py	/^    log = wf.logger$/;"	kind:variable	line:99
-log	../main.py	/^    log = wf.logger$/;"	kind:variable	line:111
+log	../main.py	/^    log = wf.logger$/;"	kind:variable	line:166
 log	../rae_spider.py	/^log = logging.getLogger("rae_spider")$/;"	kind:variable	line:7
 log	../update_details.py	/^    log = wf.logger$/;"	kind:variable	line:45
 log	../workflow/notify.py	/^def log():$/;"	kind:function	line:75
@@ -2300,11 +2291,9 @@ lxml	../lib/lxml/includes/etreepublic.pxd	/^    cdef class lxml.etree._ElementTa
 lxml	../lib/lxml/includes/etreepublic.pxd	/^    cdef class lxml.etree._ElementTree [ object LxmlElementTree ]:$/;"	kind:class	line:40
 lxml	../lib/pyquery/pyquery.py	/^import lxml.html$/;"	kind:namespace	line:12
 main	../lib/lxml/html/_diffcommand.py	/^def main(args=None):$/;"	kind:function	line:32
-main	../main-word.py	/^def main(wf):$/;"	kind:function	line:50
-main	../main.py	/^def main(wf):$/;"	kind:function	line:44
+main	../main.py	/^def main(wf):$/;"	kind:function	line:63
 main	../update_details.py	/^def main(wf):$/;"	kind:function	line:35
 main	../workflow/background.py	/^def main(wf):  # pragma: no cover$/;"	kind:function	line:248
-main-word.py	../main-word.py	1;"	kind:file	line:1
 main.py	../main.py	1;"	kind:file	line:1
 makeElement	../lib/lxml/includes/etreepublic.pxd	/^    cdef _Element makeElement(tag, _Document doc, parser,$/;"	kind:function	line:69
 makeSubElement	../lib/lxml/includes/etreepublic.pxd	/^    cdef _Element makeSubElement(_Element parent, tag, text, tail,$/;"	kind:function	line:74
@@ -2388,7 +2377,6 @@ os	../lib/lxml/__init__.py	/^    import os$/;"	kind:namespace	line:12
 os	../lib/lxml/html/__init__.py	/^    import os$/;"	kind:namespace	line:1864
 os	../lib/lxml/html/_diffcommand.py	/^import os$/;"	kind:namespace	line:6
 os	../lib/lxml/isoschematron/__init__.py	/^import os.path$/;"	kind:namespace	line:6
-os	../main-word.py	/^import os$/;"	kind:namespace	line:4
 os	../main.py	/^import os$/;"	kind:namespace	line:4
 os	../rae_spider.py	/^import os, sys$/;"	kind:namespace	line:1
 os	../update_details.py	/^import os, sys$/;"	kind:namespace	line:3
@@ -2434,8 +2422,7 @@ plistlib	../workflow/notify.py	/^import plistlib$/;"	kind:namespace	line:29
 plistlib	../workflow/workflow.py	/^import plistlib$/;"	kind:namespace	line:32
 png_to_icns	../workflow/notify.py	/^def png_to_icns(png_path, icns_path):$/;"	kind:function	line:237
 post	../workflow/web.py	/^def post(url, params=None, data=None, headers=None, cookies=None, files=None,$/;"	kind:function	line:594
-pq	../main-word.py	/^        from pyquery import PyQuery as pq$/;"	kind:namespace	line:53
-pq	../main.py	/^        from pyquery import PyQuery as pq$/;"	kind:namespace	line:47
+pq	../main.py	/^        from pyquery import PyQuery as pq$/;"	kind:namespace	line:66
 pq	../rae_spider.py	/^from pyquery import PyQuery as pq$/;"	kind:namespace	line:5
 pq	../update_details.py	/^    from pyquery import PyQuery as pq # define immediately after for global use$/;"	kind:namespace	line:44
 prepare_child	../lib/lxml/_elementpath.py	/^def prepare_child(next, token):$/;"	kind:function	line:99
@@ -2479,7 +2466,6 @@ re	../lib/lxml/html/clean.py	/^import re$/;"	kind:namespace	line:11
 re	../lib/lxml/html/diff.py	/^import re$/;"	kind:namespace	line:8
 re	../lib/lxml/html/soupparser.py	/^import re$/;"	kind:namespace	line:6
 re	../lib/pyquery/text.py	/^import re$/;"	kind:namespace	line:1
-re	../main-word.py	/^import re$/;"	kind:namespace	line:5
 re	../main.py	/^import re$/;"	kind:namespace	line:5
 re	../workflow/update.py	/^import re$/;"	kind:namespace	line:31
 re	../workflow/web.py	/^import re$/;"	kind:namespace	line:17
@@ -2520,7 +2506,6 @@ rootNodeOrRaise	../lib/lxml/includes/etreepublic.pxd	/^    cdef _Element rootNod
 run	../workflow/workflow.py	/^    def run(self, func, text_errors=False):$/;"	kind:member	line:2031
 run_applescript	../workflow/util.py	/^def run_applescript(script, *args, **kwargs):$/;"	kind:function	line:187
 run_command	../workflow/util.py	/^def run_command(cmd, **kwargs):$/;"	kind:function	line:167
-run_in_background	../main-word.py	/^from workflow.background import run_in_background, is_running$/;"	kind:namespace	line:13
 run_in_background	../main.py	/^from workflow.background import run_in_background, is_running$/;"	kind:namespace	line:13
 run_in_background	../workflow/background.py	/^def run_in_background(name, args, **kwargs):$/;"	kind:function	line:199
 run_in_background	../workflow/workflow.py	/^            from background import run_in_background$/;"	kind:namespace	line:2327
@@ -2657,7 +2642,6 @@ sys	../lib/lxml/isoschematron/__init__.py	/^import sys$/;"	kind:namespace	line:5
 sys	../lib/pyquery/openers.py	/^import sys$/;"	kind:namespace	line:2
 sys	../lib/pyquery/pyquery.py	/^import sys$/;"	kind:namespace	line:15
 sys	../lib/pyquery/text.py	/^import sys$/;"	kind:namespace	line:2
-sys	../main-word.py	/^import sys$/;"	kind:namespace	line:6
 sys	../main.py	/^import sys$/;"	kind:namespace	line:6
 sys	../rae_spider.py	/^import os, sys$/;"	kind:namespace	line:1
 sys	../update_details.py	/^import os, sys$/;"	kind:namespace	line:3
@@ -2687,7 +2671,6 @@ text_content	../lib/lxml/html/__init__.py	/^    def text_content(self):$/;"	kind
 text_type	../lib/pyquery/pyquery.py	/^    text_type = str$/;"	kind:variable	line:30
 text_type	../lib/pyquery/pyquery.py	/^    text_type = unicode$/;"	kind:variable	line:49
 threshold	../lib/lxml/html/diff.py	/^    threshold = 2$/;"	kind:variable	line:871
-time	../main-word.py	/^from time import time$/;"	kind:namespace	line:9
 time	../main.py	/^from time import time$/;"	kind:namespace	line:9
 time	../workflow/util.py	/^import time$/;"	kind:namespace	line:27
 time	../workflow/workflow.py	/^import time$/;"	kind:namespace	line:38
@@ -2767,7 +2750,6 @@ urljoin	../lib/lxml/html/__init__.py	/^    from urllib.parse import urljoin$/;"	
 urljoin	../lib/lxml/html/__init__.py	/^    from urlparse import urljoin$/;"	kind:namespace	line:58
 urljoin	../lib/pyquery/pyquery.py	/^    from urllib.parse import urljoin$/;"	kind:namespace	line:27
 urljoin	../lib/pyquery/pyquery.py	/^    from urlparse import urljoin  # NOQA$/;"	kind:namespace	line:47
-urllib	../main-word.py	/^import urllib$/;"	kind:namespace	line:8
 urllib	../main.py	/^import urllib$/;"	kind:namespace	line:8
 urllib	../update_details.py	/^import urllib$/;"	kind:namespace	line:6
 urllib	../workflow/web.py	/^import urllib$/;"	kind:namespace	line:21
@@ -2825,14 +2807,12 @@ version	../workflow/update.py	/^    version = argv[3]$/;"	kind:variable	line:552
 version	../workflow/workflow.py	/^    def version(self):$/;"	kind:member	line:1134
 warn_empty	../workflow/workflow3.py	/^    def warn_empty(self, title, subtitle=u'', icon=None):$/;"	kind:member	line:692
 web	../cache.py	/^from workflow import web, Workflow3$/;"	kind:namespace	line:2
-web	../main-word.py	/^from workflow import Workflow3, web$/;"	kind:namespace	line:12
 web	../main.py	/^from workflow import Workflow3, web$/;"	kind:namespace	line:12
 web	../update_details.py	/^from workflow import Workflow3, web$/;"	kind:namespace	line:7
 web	../workflow/update.py	/^import web$/;"	kind:namespace	line:35
 web.py	../workflow/web.py	1;"	kind:file	line:1
 webbrowser	../lib/lxml/html/__init__.py	/^    import webbrowser$/;"	kind:namespace	line:1865
-wf	../main-word.py	/^    wf = Workflow3(libraries=[os.path.abspath(os.path.join(os.path.dirname(__file__), 'lib'))])$/;"	kind:variable	line:97
-wf	../main.py	/^    wf = Workflow3(libraries=[os.path.abspath(os.path.join(os.path.dirname(__file__), 'lib'))])$/;"	kind:variable	line:109
+wf	../main.py	/^    wf = Workflow3(libraries=[os.path.abspath(os.path.join(os.path.dirname(__file__), 'lib'))])$/;"	kind:variable	line:164
 wf	../update_details.py	/^    wf = Workflow3(libraries=[os.path.abspath(os.path.join(os.path.dirname(__file__), 'lib'))])$/;"	kind:variable	line:43
 wf	../workflow/background.py	/^def wf():$/;"	kind:function	line:35
 wf	../workflow/notify.py	/^def wf():$/;"	kind:function	line:63
