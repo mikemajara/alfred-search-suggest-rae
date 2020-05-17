@@ -33,16 +33,6 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>9C5113A2-F7E8-4DD4-BF34-C7A0F81F39B0</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
 		</array>
 		<key>EDD1258F-38AB-452D-AC67-4679BCDD7935</key>
 		<array>
@@ -228,7 +218,50 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string># Rae suggestion search - Alfred Workflow 📖
+
+Integración en Alfred del diccionario de la Real Academia de la Lengua.
+
+## Motivation
+Haberlos haylos y donde no los hay que no los haiga, que nos gusta ablar cno correcion. 
+Saber ques lo k estamos queriendo decir y decilo con fundamento. Siendo ques la rae la referencia en este aspecto en la lengua castellana, y mal que nos pese
+que anden furgándole a las tildes criticas de las palabras cortas de cuando en cuando. Este flujo de trabajo hace fácil que consultes la RAE y escribas con correcion.
+az el favor.
+
+## Description
+🇬🇧 This workflow searches RAE dictionary for a definition and returns a list with a preview of the results on web. 
+🇪🇸 Este workflow busca una definición en el diccionario RAE y devuelve una lista con una vista previa de los resultados en la web.
+
+Usage:
+- `rae hol`
+- `rae este`
+- `rae acuciar`
+- `rae dizque`
+
+Navigate results and | Navega por los resultados y:
+- `⌘ + c` to copy definitions to clipboard
+- `⌘ + l` to show defintions full screen (large type)
+- `⇧ Shift` to preview web
+
+&gt; 💡 
+&gt; 🇬🇧 Needless to say this searches a spanish dictionary. 
+&gt; 🇪🇸 Huelga decir que esto busca definiciones en un diccionario español.
+
+
+## Roadmap
+
+- [ ] Add extended list on selected word
+- [ ] Scrap ids so redirect can have an anchor
+
+## ACK
+
+This workflow was made with care and love ❤ and would certainly have not been possible without [Alfred-Workflow](https://github.com/deanishe/alfred-workflow).
+
+## License
+
+MIT License
+
+Copyright (c) [2020] [Mike Majara]</string>
 	<key>uidata</key>
 	<dict>
 		<key>73B590C2-74F3-4404-A768-A6C0A545A35D</key>
@@ -273,13 +306,6 @@
 			<key>ypos</key>
 			<integer>40</integer>
 		</dict>
-	</dict>
-	<key>variables</key>
-	<dict>
-		<key>MM_DISPLAY_DETAILS</key>
-		<string>1</string>
-		<key>MM_DISPLAY_THUMBNAILS</key>
-		<string>1</string>
 	</dict>
 	<key>version</key>
 	<string>0.1.0</string>
