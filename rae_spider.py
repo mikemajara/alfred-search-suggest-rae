@@ -26,7 +26,7 @@ class RaeSpider:
         return self.articles
 
     def get_title_article_title(cls, article):
-        return article.find('header').text
+        return article.find('header').text or ''
 
     def get_etymology(cls, article):
         etymologies = article.cssselect('.n2')
