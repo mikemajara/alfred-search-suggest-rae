@@ -154,6 +154,7 @@ ICON_HELP	../workflow/workflow.py	/^ICON_HELP = os.path.join(ICON_ROOT, 'HelpIco
 ICON_HOME	../workflow/workflow.py	/^ICON_HOME = os.path.join(ICON_ROOT, 'HomeFolderIcon.icns')$/;"	kind:variable	line:85
 ICON_INFO	../workflow/workflow.py	/^ICON_INFO = os.path.join(ICON_ROOT, 'ToolbarInfo.icns')$/;"	kind:variable	line:86
 ICON_NETWORK	../workflow/workflow.py	/^ICON_NETWORK = os.path.join(ICON_ROOT, 'GenericNetworkIcon.icns')$/;"	kind:variable	line:87
+ICON_NOTE	../main.py	/^from workflow import Workflow3, web, ICON_NOTE$/;"	kind:namespace	line:12
 ICON_NOTE	../workflow/workflow.py	/^ICON_NOTE = os.path.join(ICON_ROOT, 'AlertNoteIcon.icns')$/;"	kind:variable	line:88
 ICON_ROOT	../workflow/workflow.py	/^ICON_ROOT = '\/System\/Library\/CoreServices\/CoreTypes.bundle\/Contents\/Resources'$/;"	kind:variable	line:71
 ICON_SETTINGS	../workflow/workflow.py	/^ICON_SETTINGS = os.path.join(ICON_ROOT, 'ToolbarAdvanced.icns')$/;"	kind:variable	line:89
@@ -333,7 +334,7 @@ Workflow	../workflow/background.py	/^from workflow import Workflow$/;"	kind:name
 Workflow	../workflow/workflow.py	/^class Workflow(object):$/;"	kind:class	line:889
 Workflow	../workflow/workflow3.py	/^from .workflow import ICON_WARNING, Workflow$/;"	kind:namespace	line:32
 Workflow3	../cache.py	/^from workflow import web, Workflow3$/;"	kind:namespace	line:2
-Workflow3	../main.py	/^from workflow import Workflow3, web$/;"	kind:namespace	line:12
+Workflow3	../main.py	/^from workflow import Workflow3, web, ICON_NOTE$/;"	kind:namespace	line:12
 Workflow3	../update_details.py	/^from workflow import Workflow3, web$/;"	kind:namespace	line:7
 Workflow3	../workflow/__init__.py	/^from .workflow3 import Variables, Workflow3$/;"	kind:namespace	line:17
 Workflow3	../workflow/workflow3.py	/^class Workflow3(Workflow):$/;"	kind:class	line:449
@@ -2266,7 +2267,7 @@ load	../workflow/workflow.py	/^    def load(cls, file_obj):$/;"	kind:member	line
 locate_unbalanced_end	../lib/lxml/html/diff.py	/^def locate_unbalanced_end(unbalanced_end, pre_delete, post_delete):$/;"	kind:function	line:415
 locate_unbalanced_start	../lib/lxml/html/diff.py	/^def locate_unbalanced_start(unbalanced_start, pre_delete, post_delete):$/;"	kind:function	line:365
 locked	../workflow/util.py	/^    def locked(self):$/;"	kind:member	line:415
-log	../main.py	/^    log = wf.logger$/;"	kind:variable	line:178
+log	../main.py	/^    log = wf.logger$/;"	kind:variable	line:186
 log	../rae_spider.py	/^log = logging.getLogger("rae_spider")$/;"	kind:variable	line:7
 log	../update_details.py	/^    log = wf.logger$/;"	kind:variable	line:45
 log	../workflow/notify.py	/^def log():$/;"	kind:function	line:75
@@ -2809,12 +2810,12 @@ version	../workflow/update.py	/^    version = argv[3]$/;"	kind:variable	line:552
 version	../workflow/workflow.py	/^    def version(self):$/;"	kind:member	line:1134
 warn_empty	../workflow/workflow3.py	/^    def warn_empty(self, title, subtitle=u'', icon=None):$/;"	kind:member	line:692
 web	../cache.py	/^from workflow import web, Workflow3$/;"	kind:namespace	line:2
-web	../main.py	/^from workflow import Workflow3, web$/;"	kind:namespace	line:12
+web	../main.py	/^from workflow import Workflow3, web, ICON_NOTE$/;"	kind:namespace	line:12
 web	../update_details.py	/^from workflow import Workflow3, web$/;"	kind:namespace	line:7
 web	../workflow/update.py	/^import web$/;"	kind:namespace	line:35
 web.py	../workflow/web.py	1;"	kind:file	line:1
 webbrowser	../lib/lxml/html/__init__.py	/^    import webbrowser$/;"	kind:namespace	line:1865
-wf	../main.py	/^    wf = Workflow3(libraries=[os.path.abspath(os.path.join(os.path.dirname(__file__), 'lib'))])$/;"	kind:variable	line:176
+wf	../main.py	/^    wf = Workflow3(libraries=[os.path.abspath(os.path.join(os.path.dirname(__file__), 'lib'))])$/;"	kind:variable	line:184
 wf	../update_details.py	/^    wf = Workflow3(libraries=[os.path.abspath(os.path.join(os.path.dirname(__file__), 'lib'))])$/;"	kind:variable	line:43
 wf	../workflow/background.py	/^def wf():$/;"	kind:function	line:35
 wf	../workflow/notify.py	/^def wf():$/;"	kind:function	line:63

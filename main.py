@@ -9,7 +9,7 @@ import urllib
 from time import time
 
 import cache
-from workflow import Workflow3, web
+from workflow import Workflow3, web, ICON_NOTE
 from workflow.background import run_in_background, is_running
 
 DISPLAY_DETAILS = True
@@ -132,7 +132,15 @@ def main(wf):
                 copytext=details_full_str,
                 largetext=details_full_str
             )
-
+            # .add_modifier(
+            #     key='alt',
+            #     subtitle='Full screen definition ',
+            #     arg=details_full_str,
+            #     valid=True,
+            #     icon=ICON_NOTE
+            # )
+            
+    # Temporarily disabled
     elif selectedWord is not None and EXTENDED_DEFINITION:
         details = wf.cached_data("details_" + selectedWord, max_age=0)
         if details is None:
