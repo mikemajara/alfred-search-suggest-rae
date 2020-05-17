@@ -310,6 +310,6 @@ Copyright (c) [2020] [Mike Majara]</string>
 	<key>version</key>
 	<string>0.1.0</string>
 	<key>webaddress</key>
-	<string>https://github.com/MikeMajara/alfred-suggestion-search-rae</string>
+	<string>https://github.com/MikeMajara/alfred-search-suggest-rae</string>
 </dict>
 </plist>
